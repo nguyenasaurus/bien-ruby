@@ -7,13 +7,18 @@
     </p>
 
     <p>
-        <%= f.label :body %>
+        <%= f.label(:body, "Review")  %>
         <%= f.text_area :body %>
     </p>
 
     <p>
         <%= f.label :score %>
         <%= f.number_field :score %>
+    </p>
+
+    <p>
+        <%= f.label(:restaurant, "Restaurant Name") %>
+        <%= f.text_field :restaurant %>
     </p>
 
 <%= f.submit "Save review" %>
