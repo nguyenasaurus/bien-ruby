@@ -1,4 +1,4 @@
 <% @reviews.each do |review| %>
 
-    <h3 class="review"><%= review.title %></h3>
+    <h3 class="review"><%= link_to review.title, review_path(review) %></h3>
 <% end %>

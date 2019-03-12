@@ -20,6 +20,11 @@ class ReviewsController < ApplicationController
         redirect_to root_path
     end
 
+    def show
+        #individual review page
+        @review = Review.find(params[:id])
+    end
+
 
 end
 
