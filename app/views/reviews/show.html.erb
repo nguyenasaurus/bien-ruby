@@ -7,3 +7,7 @@
     <h5><%= @review.title %></h5>
     <p><%= simple_format @review.body %></p>
 </section>
+
+<div>
+    <%= link_to "Delete review", review_path(@review), method: :delete, data:  %>
+</div>
